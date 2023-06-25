@@ -13,9 +13,50 @@
     --cor5: #353940;
 }
 
+.slider {
+    margin: auto;
+    margin-left: -5px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 30%;
+    position: relative;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
 body {
     background-image: linear-gradient(to right, #353940, #B0B5BF);
-    margin: 0px;
+    margin: auto;
 }
 
 header {
@@ -94,16 +135,29 @@ h1#principal {
     font-family: london;
     font-size: 3.5em;
     text-align: center;
+    margin: 0px;
 }
 
 
-img {
+img#sand {
     height: 300px;
-    width: 200px;
+    width: 210px;
     display: block;
     margin: auto;
+    padding-right: 50px;
     border-radius: 50%;
-    margin-bottom: 10px;
+}
+
+img#perpetuos {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+img.pequena {
+    max-width: 700px;
+    display: block;
+    margin: auto;
 }
 
 p {
@@ -122,6 +176,15 @@ aside#sandman {
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
+
+aside#personagens {
+    background-color: #7D828C;
+    padding: 10px;
+    margin: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
 
 aside#arcos {
     background-color: #7D828C;
